@@ -24,3 +24,6 @@ jobs:
           context: .
           push: true
           tags: hainguyen95/cicd-pipeline-test:latest
+
+      - name: Trigger deployment on Render
+        run: curl "${{ secrets.RENDER_DEPLOY_HOOK }}"
