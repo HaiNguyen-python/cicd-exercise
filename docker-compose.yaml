@@ -1,0 +1,14 @@
+services:
+  web-app:
+    # LƯU Ý: Thay <USERNAME> bằng tên Docker Hub của bạn
+    image: hainguyen95/cicd-pipeline-test:latest
+    ports:
+      - "3000:3000"
+    container_name: my-web-app
+
+  watchtower:
+    image: containrrr/watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    # Check cập nhật mỗi 30 giây (để test cho nhanh)
+    command: --interval 30
