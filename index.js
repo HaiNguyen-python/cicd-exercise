@@ -1,12 +1,12 @@
 const express = require('express')
 const app = express()
+const port = 3000
 
 app.get('/', (req, res) => {
-  res.send('<h1>Hello World!</h1>')
+  // Đây là dòng chữ chúng ta sẽ sửa để kiểm tra CI/CD hoạt động chưa
+  res.send('Hello World!') 
 })
 
-const PORT = 8080
-
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`)
+app.listen(port, () => {
+  console.log(`App running at http://localhost:${port}`)
 })

@@ -28,4 +28,4 @@ jobs:
           push: true
           # LƯU Ý: Thay <USERNAME> bằng tên Docker Hub của bạn
           # Thay <REPO> bằng tên repo bạn tạo ở Phần 2
-          tags: <hainguyen95>/cicd-pipeline-test:latest
+          tags: hainguyen95/cicd-pipeline-test:latest
