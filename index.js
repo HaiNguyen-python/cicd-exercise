@@ -4,7 +4,7 @@ const port = 3000
 
 app.get('/', (req, res) => {
   // Đây là dòng chữ chúng ta sẽ sửa để kiểm tra CI/CD hoạt động chưa
-  res.send('Hello World!') 
+  res.send('Hello World! This is an automation update!') 
 })
 
 app.listen(port, () => {
